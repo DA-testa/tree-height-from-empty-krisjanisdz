@@ -36,6 +36,7 @@ def main():
     if 'I' in ievade:
         node_skaits = input()
         parent_input = list(map(int,input().split()))
+        print(compute_height(node_skaits, parent_input))
 
     if 'F' in ievade:
         file = input()
@@ -45,7 +46,6 @@ def main():
                  parent_input = list(map(int,fails.readline().split()))
                  print(compute_height(node_skaits, parent_input))
 
-    print(compute_height(node_skaits, parent_input))
 
     # let user input file name to use, don't allow file names with letter a
     # account for github input inprecision
