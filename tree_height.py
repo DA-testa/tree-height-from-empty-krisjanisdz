@@ -41,7 +41,7 @@ def main():
     if 'F' in ievade:
         file = input()
         if "a" not in file:
-            with open ("./test/"+file, ievade ='r') as fails:
+            with open ("./test/"+file,'r') as fails:
                  node_skaits = int(fails.readline())
                  parent_input = list(map(int,fails.readline().split()))
                  print(compute_height(node_skaits, parent_input))
